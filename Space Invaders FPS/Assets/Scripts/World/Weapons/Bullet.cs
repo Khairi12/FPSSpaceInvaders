@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 
 public class Bullet : MonoBehaviour
 {
-    public delegate void Hit();
-    public event Hit OnHit;
-
     private Rigidbody rigidBdy;
     private WeaponData weaponData;
 
@@ -22,7 +18,7 @@ public class Bullet : MonoBehaviour
 
     public void Fire()
     {
-        rigidBdy.AddForce(transform.up, ForceMode.VelocityChange);
+        rigidBdy.AddForce(transform.up * weaponData.projectileSpeed, ForceMode.VelocityChange);
     }
 
     // -----------------------------------------------------------------

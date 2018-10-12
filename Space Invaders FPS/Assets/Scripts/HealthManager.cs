@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Bullet))]
-
 public class HealthManager : MonoBehaviour
 {
     public delegate void Death();

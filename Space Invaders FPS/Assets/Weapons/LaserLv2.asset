@@ -19,5 +19,5 @@ MonoBehaviour:
   range: 20
   piercing: 100
   attackSpeed: 1.25
-  projectileSpeed: 700
+  projectileSpeed: 900
   lifeTime: 4
