@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352f916a432098d478d2d6a6d1486cfb, type: 3}
+  m_Name: LaserLv2
+  m_EditorClassIdentifier: 
+  gunModel: {fileID: 1042618080465144, guid: 99e052f375dccc943838a231ef8badbb, type: 2}
+  bulletModel: {fileID: 1853632108019930, guid: e4b63f280aceb98419321f06cc7d39db,
+    type: 2}
+  physicalDamage: 15
+  magicalDamage: 15
+  range: 20
+  piercing: 100
+  attackSpeed: 1.25
+  projectileSpeed: 700
+  lifeTime: 4
