@@ -14,6 +14,8 @@ public class WeaponData : ScriptableObject
     public float physicalDamage;
     public float magicalDamage;
 
+    public float ammoCost;
+
     public float range;
     public float piercing;
     public float attackSpeed;

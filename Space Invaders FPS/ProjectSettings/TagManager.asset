@@ -16,10 +16,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - Bullet
+  - Ground
+  - Canonball
+  - Spaceship
   - 
   - 
   - 

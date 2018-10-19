@@ -42,7 +42,8 @@ public class Bullet : MonoBehaviour
         if (colHM != null)
         {
             colHM.TakeDamage(weaponData);
-            Destroy(transform.gameObject);
         }
+
+        Destroy(transform.gameObject);
     }
 }

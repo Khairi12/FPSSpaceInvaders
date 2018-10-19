@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4048495849686114}
   m_Layer: 0
-  m_Name: BrokenCube
+  m_Name: CubeBroken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

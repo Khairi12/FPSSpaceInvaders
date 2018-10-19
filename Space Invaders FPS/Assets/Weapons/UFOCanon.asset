@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352f916a432098d478d2d6a6d1486cfb, type: 3}
-  m_Name: LaserLv3
+  m_Name: UFOCanon
   m_EditorClassIdentifier: 
-  gunModel: {fileID: 1042618080465144, guid: 99e052f375dccc943838a231ef8badbb, type: 2}
-  bulletModel: {fileID: 1524395918317704, guid: eb7358c0a34cb1444bce32d1386120c4,
+  gunModel: {fileID: 0}
+  bulletModel: {fileID: 1461346388498192, guid: 20eed118acf1aca44ad83f23e0ea49eb,
     type: 2}
-  physicalDamage: 30
-  magicalDamage: 25
+  physicalDamage: 10
+  magicalDamage: 0
   ammoCost: 1
-  range: 30
-  piercing: 100
-  attackSpeed: 1.5
-  projectileSpeed: 45
-  lifeTime: 3
+  range: 0
+  piercing: 0
+  attackSpeed: 0
+  projectileSpeed: 10
+  lifeTime: 10

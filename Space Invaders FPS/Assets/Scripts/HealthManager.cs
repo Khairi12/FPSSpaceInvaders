@@ -5,9 +5,10 @@ public class HealthManager : MonoBehaviour
     public delegate void Death();
     public event Death OnDeath;
 
-    [SerializeField] private float curHealth = 100f;
-    [SerializeField] private float maxHealth = 100f;
-    [SerializeField] private float minHealth = 0f;
+    public delegate void Damage();
+    public event Damage OnDamage;
+
+    public float curHealth = 100f;
 
     // -----------------------------------------------------------------
     // PUBLIC
@@ -22,6 +23,9 @@ public class HealthManager : MonoBehaviour
         else
         {
             curHealth -= data.physicalDamage;
+
+            if (OnDamage != null)
+                OnDamage();
         }
     }
 
