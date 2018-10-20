@@ -46,12 +46,7 @@ public class ShootWeapon : MonoBehaviour
         Vector3 gunBarrel = transform.GetChild(0).transform.position;
         Bullet bullet = bulletObject.transform.GetChild(0).GetComponent<Bullet>();
 
-        // Debug.Log("rtprnt: " + transform.parent.parent.localRotation.eulerAngles);
-        // Debug.Log("parent: " + transform.parent.localRotation.eulerAngles);
-        // Debug.Log("currnt: " + transform.localRotation.eulerAngles);
-        // Debug.Log("childd: " + transform.GetChild(0).localRotation.eulerAngles);
-
-        bulletObject.transform.SetPositionAndRotation(gunBarrel, transform.parent.localRotation);
+        bulletObject.transform.SetPositionAndRotation(gunBarrel, (Camera.main.transform.rotation));
         bullet.SetWeaponData(data);
         bullet.Fire();
 

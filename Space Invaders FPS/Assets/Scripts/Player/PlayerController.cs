@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float rotateYMin = -60f;
     public float rotateYMax = 60f;
 
+    public float jumpHeight = 5f;
+
     private Transform cameraTransform;
     private Transform playerTransform;
     private Rigidbody playerRigidbody;
@@ -55,7 +57,15 @@ public class PlayerController : MonoBehaviour
         DiagonalWalk();
         BackWalk();
 
-        playerRigidbody.velocity = outgoingVelocity * outgoingSpeed;
+        playerRigidbody.velocity = new Vector3(
+            outgoingVelocity.x * outgoingSpeed,
+            playerRigidbody.velocity.y,
+            outgoingVelocity.z * outgoingSpeed);
+    }
+
+    private void Jump()
+    {
+        playerRigidbody.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
     }
 
     private void Rotate()
@@ -75,6 +85,9 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         Move();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Jump();
     }
 
     private void FixedUpdate()

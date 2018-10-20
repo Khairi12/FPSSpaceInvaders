@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352f916a432098d478d2d6a6d1486cfb, type: 3}
   m_Name: LaserLv1
   m_EditorClassIdentifier: 
-  gunModel: {fileID: 1042618080465144, guid: 99e052f375dccc943838a231ef8badbb, type: 2}
+  gunModel: {fileID: 0}
   bulletModel: {fileID: 1545843664375210, guid: de42fa749682b914aaeed6c379efeab4,
     type: 2}
   physicalDamage: 5

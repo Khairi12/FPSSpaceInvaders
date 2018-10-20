@@ -14,11 +14,11 @@ MonoBehaviour:
   gunModel: {fileID: 0}
   bulletModel: {fileID: 1461346388498192, guid: 20eed118acf1aca44ad83f23e0ea49eb,
     type: 2}
-  physicalDamage: 10
+  physicalDamage: 15
   magicalDamage: 0
   ammoCost: 1
   range: 0
   piercing: 0
   attackSpeed: 0
   projectileSpeed: 10
-  lifeTime: 10
+  lifeTime: 15
